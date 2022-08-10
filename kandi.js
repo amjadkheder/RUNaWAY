@@ -715,7 +715,7 @@ function animate() {
 
     // draw the score
     ctx.fillText('Score: ' + score + 'm', canvas.width - 160, 30);
-    ctx.fillText('Name: ' + 'Chandra Arya', canvas.width - 160, 45);
+    ctx.fillText('Name: ' + 'Amjad Alhrbi', canvas.width - 160, 45);
     ctx.fillText('Class: ' + 'DevOps online', canvas.width - 160, 60);
 
     // spawn a new Sprite
@@ -816,7 +816,7 @@ function startGame() {
   player.reset();
   ticker = 0;
   stop = false;
-  score = 0;
+  score = 1995;
   platformHeight = 2;
   platformLength = 15;
   gapLength = 0;
