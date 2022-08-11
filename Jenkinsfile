@@ -8,7 +8,7 @@ pipeline {
 		AWS_ACCESS_KEY_ID     = credentials('amjad-aws-secret-key-id')
   		AWS_SECRET_ACCESS_KEY = credentials('amjad-aws-secret-access-key')
 		ARTIFACT_NAME = 'Dockerrun.aws.json'
-		AWS_S3_BUCKET = 'amjad-belt2-artifacts-2022'
+		AWS_S3_BUCKET = 'amjad-belt2-artifacts-123456'
 		AWS_EB_APP_NAME = 'amjad-docker'
         AWS_EB_ENVIRONMENT_NAME = 'Amjaddocker-env'
         AWS_EB_APP_VERSION = "${BUILD_ID}"
