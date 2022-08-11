@@ -20,7 +20,7 @@ pipeline {
 		stage('Build') {
 			steps {
 				sh 'docker build -t amjadkheder/runaway:latest .'
-				 sh 'docker run -d -p 3000:80 amjadkheder/runaway:latest .'
+				 
 			}
 		}
 
