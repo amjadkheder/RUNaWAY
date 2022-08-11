@@ -3,7 +3,7 @@ pipeline {
 	agent any
 
 	environment {
-		DOCKERHUB_CREDENTIALS_PSW = credentials('amjad-dockerhub-token')
+		DOCKERHUB_CREDENTIALS_PSW = credentials('amjad')
         DOCKERHUB_CREDENTIALS_USR = 'amjadkheder'
 		AWS_ACCESS_KEY_ID     = credentials('amjad-aws-secret-key-id')
   		AWS_SECRET_ACCESS_KEY = credentials('amjad-aws-secret-access-key')
@@ -20,6 +20,7 @@ pipeline {
 		stage('Build') {
 			steps {
 				sh 'docker build -t amjadkheder/runaway:latest .'
+				 sh 'docker run -d -p 80:80 amjadkheder/runaway:latest .'
 			}
 		}
 
